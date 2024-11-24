@@ -1,5 +1,5 @@
-body{
-  background-color: #fafafa;
+body {
+  background-color: #e8f5e9; /* Light green */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,57 +7,60 @@ body{
   width: 100%;
   height: 100vh;
 }
-.box{
- border: 1px solid #dfdffd;
- background-color: #fff; 
- border-radius: 5px;
+
+.box {
+  border: 1px solid #b2dfdb; /* Teal */
+  background-color: #ffffff;
+  border-radius: 8px;
 }
-.g-btn{
+
+.g-btn {
   width: 100%!important;
-  /* height: 100vh!important; */
   border-radius: 20px;
   font-size: 15px !important;
+  background-color: #80cbc4; /* Teal */
+  color: white;
 }
+
 .g-btn > div,
 .g-btn > div > svg {
   width: 40px !important;
   height: 38px !important;
-} 
-/* Home.css */
+}
 
 /* Input field styling */
 .task-input {
-  padding: 10px;
-  width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 12px;
+  width: 320px;
+  border: 1px solid #90caf9; /* Blue */
+  border-radius: 6px;
   font-size: 16px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease-in-out;
 }
 
 .task-input:focus {
   outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+  border-color: #42a5f5; /* Darker blue */
+  box-shadow: 0 0 8px rgba(66, 165, 245, 0.5);
 }
 
 /* Add button styling */
 .add-button {
   padding: 10px 20px;
   border: none;
-  background-color: #007bff;
+  background-color: #42a5f5; /* Blue */
   color: white;
-  border-radius: 5px;
+  border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
 .add-button:hover {
-  background-color: #0056b3;
+  background-color: #1e88e5; /* Darker blue */
   transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .add-button:active {
@@ -71,34 +74,35 @@ body{
   align-items: center;
   justify-content: center;
 }
+
 .todo-container {
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  border: 1px solid #c8e6c9; /* Light green border */
+  border-radius: 12px;
+  background-color: #f1f8e9; /* Light green background */
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
 }
 
 .todo-heading {
   text-align: center;
-  color: #333;
+  color: #2e7d32; /* Green */
 }
 
 .todo-list {
-  margin: 20px 0;
+  margin: 25px 0;
 }
 
 .todo-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #fff;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #cfd8dc; /* Light grey */
+  border-radius: 8px;
+  background-color: #ffffff;
 }
 
 .todo-text {
@@ -108,24 +112,24 @@ body{
 
 .todo-buttons {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
 .delete-button,
 .edit-button {
-  padding: 5px 10px;
-  color: #fff;
+  padding: 8px 14px;
+  color: #ffffff;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
 }
 
 .delete-button {
-  background-color: #ff6b6b;
+  background-color: #ef5350; /* Red */
 }
 
 .edit-button {
-  background-color: #6b9eff;
+  background-color: #29b6f6; /* Blue */
 }
 
 .pagination {
@@ -135,10 +139,10 @@ body{
 }
 
 .pagination-button {
-  padding: 5px 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #fff;
+  padding: 6px 12px;
+  border: 1px solid #cfd8dc; /* Light grey */
+  border-radius: 6px;
+  background-color: #ffffff;
   cursor: pointer;
 }
 
@@ -153,7 +157,7 @@ body{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(33, 33, 33, 0.7); /* Dark semi-transparent */
   z-index: 999;
 }
 
@@ -162,61 +166,37 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
   z-index: 1000;
-}
-
-.modal-input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-}
-
-.modal {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  width: 300px;
-  text-align: center;
 }
 
 .modal-input {
   width: 90%;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #42a5f5; /* Blue */
+  border-radius: 6px;
 }
 
 .modal-buttons button {
-  margin: 5px;
+  margin: 6px;
 }
 
 .save-button {
-  background-color: green;
+  background-color: #43a047; /* Green */
   color: white;
-  padding: 10px;
+  padding: 12px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 .cancel-button {
-  background-color: red;
+  background-color: #e53935; /* Red */
   color: white;
-  padding: 10px;
+  padding: 12px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
 }

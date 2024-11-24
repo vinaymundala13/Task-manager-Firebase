@@ -1,6 +1,5 @@
 import React from 'react';
 import {Form,Button} from 'react-bootstrap';
-import GoogleButton from 'react-google-button';
 import { Link} from 'react-router-dom';
 import { useUserAuth } from '../context/UserAuthContent';
 import { useNavigate } from 'react-router-dom';
@@ -61,11 +60,11 @@ const handleGoogleSignIn=async(e)=>{
     </Form>
     <hr/>
     <div>
-      <GoogleButton
+      {/* <GoogleButton
           className="g-btn"
           type="dark"
           onClick={handleGoogleSignIn}
-      />
+      /> */}
     </div>
    </div>
    <div className='p-4 box mt-4 text-center'>
