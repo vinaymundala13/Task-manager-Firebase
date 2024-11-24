@@ -1,0 +1,222 @@
+body{
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+}
+.box{
+ border: 1px solid #dfdffd;
+ background-color: #fff; 
+ border-radius: 5px;
+}
+.g-btn{
+  width: 100%!important;
+  /* height: 100vh!important; */
+  border-radius: 20px;
+  font-size: 15px !important;
+}
+.g-btn > div,
+.g-btn > div > svg {
+  width: 40px !important;
+  height: 38px !important;
+} 
+/* Home.css */
+
+/* Input field styling */
+.task-input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.task-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+}
+
+/* Add button styling */
+.add-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.add-button:active {
+  transform: translateY(1px);
+}
+
+/* Centering the form and other elements */
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.todo-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-heading {
+  text-align: center;
+  color: #333;
+}
+
+.todo-list {
+  margin: 20px 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.todo-text {
+  flex: 1;
+  text-align: left;
+}
+
+.todo-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.delete-button,
+.edit-button {
+  padding: 5px 10px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: #ff6b6b;
+}
+
+.edit-button {
+  background-color: #6b9eff;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination-button {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.pagination-button.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+
+.modal-input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.modal-buttons button {
+  margin: 5px;
+}
+
+.save-button {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.cancel-button {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
